@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="main-nav">
+        <img src="./img/logo.png" alt='Site Logo'>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="#" >TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">Latest</a>
+        </nav>
+        </div>
+ 
+        <div class = 'secondary-nav'>
+         
+          <a href='#' class="search-box">
+             <span><i class="fas fa-search search-box-icon"></i></span>
+             <input id = 'search-movies' class='search-box-input' placeholder="Titles,people,genres">
+          </a>
+          <a href='#'>
+             <span>CHILDREN</span>
+          </a>
+          <a href='#'>
+             <span><i class="fas fa-gift"></i></span>
+         </a>
+         <a href='#'>
+             <span><i class="fas fa-bell"></i></span>
+         </a>
+    
+         <a href='#'>
+             <i class="fa fa-user" aria-hidden="true"></i>
+         </a>
+        </div>
+     </header>
+     <div class="movie-details">
+        <div id = 'moviedetailphoto' class="column left">
+        </div>
+        <div class="column right" style="background-color:#e4dfdf;margin-left: 30px;">
+         <div class="row desc">
+                <div class="col-sm-6" >
+                    <span id="movie-name"></span>
+                 </div>
+                 <div class="col-sm-2"></div>
+                 <div class="col-sm-4" style="margin-top: 7px;">
+                     <span id = 'releaseyear' class='release'>(1994)</span>
+                 </div>
+         </div>
+         <div class="row desc">
+            <div class="col">
+                <span id="time"></span>
+                <span id = 'genres' class="genres"></span>
+                <span id = 'releasedate' class="genres"></span>
+            </div>
+         </div>
+         <hr style="margin-top: 15px;">
+         <div class="row desc col-sm-12">
+            <div class="col-sm-6">
+            <i class="rating__icon rating__icon--star fa fa-star" style="color: #e4b818;
+            font-size: 70px;"></i>
+            <span id="star">6.9</span>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <span class="ratings">Your Ratings</span>
+                </div>
+                <div style="margin-top: 5px;">
+                    <span  class="review">Ratings - &nbsp;<span  id = 'ratings' class="point"></span></span>
+                    <span  class="review">Reviews -&nbsp; <span  id = 'reviews' class="point"></span></span>
+                </div>
+               
+            </div>      
+         </div>
+         <hr style="margin-top: 15px;">
+         <div class="row desc">
+             <div class="col-sm-12">
+                <p id="overview">Before he built a drug empire, Ferry Bouman returns to his hometown on a revenge mission that finds his loyalty tested — and a love that alters his life.</p>
+             </div>
+         </div>
+        </div>
+      </div>
+    <script type="module" src='./js/moviedetail.js'></script>
+</body>
+</html>

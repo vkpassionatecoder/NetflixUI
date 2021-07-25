@@ -1,0 +1,9 @@
+Appending - In general, innerHTML is slower than appendChild(), 
+because with innerHTML, the browser need to parse the input string, 
+create objects for elements/text, then add them into the DOM.
+
+In simple one-time cases, createElement/appendChild is more efficient,
+but in cases where many changes are made, innerHTML can be the more efficient
+choice
+to bypass recalculating, painting and layout for every single element we added
+var fragment = document.createDocumentFragment();
