@@ -10,9 +10,9 @@ import {
 const loader = document.querySelector(".loader");
 document.addEventListener("DOMContentLoaded", () => {
   showLoader();
-  setTimeout(() => {
-    getDataOnLoad();
-  }, 1500);
+  // setTimeout(() => {
+  getDataOnLoad();
+  // }, 1500);
 });
 
 async function getDataOnLoad() {
