@@ -3,7 +3,7 @@ const API_KEY = "33949e951ef79e9487d72ee006ef7f98";
 
 const IMAGE_BASE_URL = "http://image.tmdb.org/t/p/";
 
-const BACKDROP_SIZE = "w1280";
+const BACKDROP_SIZE = "w780";
 const POSTER_SIZE = "w500";
 const fetchItems = (endpoint) => {
   return fetch(endpoint).then((res) => res.json());
